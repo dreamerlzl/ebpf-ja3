@@ -1,0 +1,3 @@
+build:
+  BPF_CLANG=clang-14 BPF_CFLAGS="-O2 -g -Wall -Werror" go generate -v ./...
+  cd ja3 && go build
